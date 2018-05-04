@@ -1,0 +1,44 @@
+.nav {
+  &__items {    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+
+    & li {
+      color: white;
+      list-style: none;
+      font-size: 2rem;
+      padding: 0 2rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:hover {
+        color: red;
+        animation: pulse 1s infinite;
+        
+        @keyframes pulse {
+          from {
+            transform: scale3d(1, 1, 1);
+          }
+        
+          50% {
+            transform: scale3d(1.15, 1.15, 1.15);
+          }
+        
+          to {
+            transform: scale3d(1, 1, 1);
+          }
+        }
+      }
+    }
+  }
+}

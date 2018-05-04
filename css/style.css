@@ -24,17 +24,47 @@ html {
 body {
   font-family: 'Kalam', cursive;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  position: relative; }
+
+.nav__items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__items {
+      justify-content: center; } }
+  .nav__items li {
+    color: white;
+    list-style: none;
+    font-size: 2rem;
+    padding: 0 2rem; }
+    .nav__items li a {
+      text-decoration: none;
+      color: inherit; }
+    .nav__items li:hover {
+      color: red;
+      animation: pulse 1s infinite; }
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15); }
+  to {
+    transform: scale3d(1, 1, 1); } }
 
 .container {
   display: grid;
-  grid-template-rows: 10vh 60vh 50vh 100vh 80vh 70vh 15vh; }
+  grid-template-rows: 60vh 50vh 100vh 80vh 70vh 15vh; }
 
 .nav {
   background-color: black;
-  font-size: 6rem;
-  color: white;
-  text-align: center; }
+  height: 7vh;
+  width: 100%;
+  position: fixed; }
 
 .header {
   background-color: #141414;

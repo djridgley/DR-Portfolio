@@ -1,15 +1,14 @@
 .container {
-
   display: grid;
-  grid-template-rows: 10vh 60vh 50vh 100vh 80vh 70vh 15vh;
+  grid-template-rows: 60vh 50vh 100vh 80vh 70vh 15vh;
 }
 
 
 .nav {
   background-color: black;
-  font-size: 6rem;
-  color: white;
-  text-align: center;
+  height: 7vh;
+  width: 100%;
+  position: fixed;
 }
 
 .header {
