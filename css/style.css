@@ -27,6 +27,85 @@ body {
   line-height: 1.6;
   position: relative; }
 
+.header {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      grid-template-columns: 1fr; } }
+  .header__headings {
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/2; }
+    .header__headings h1, .header__headings h2, .header__headings hr {
+      color: white; }
+    .header__headings h1 {
+      font-size: 6rem; }
+    .header__headings h2 {
+      margin-top: -2rem;
+      font-size: 3rem; }
+    .header__headings hr {
+      width: 30%; }
+      @media only screen and (max-width: 75em) {
+        .header__headings hr {
+          width: 50%; } }
+  .header__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    grid-row: 1/2;
+    grid-column: 1/2; }
+    .header__icon-container a {
+      display: inline-block;
+      padding: 0 3rem; }
+      .header__icon-container a svg {
+        fill: white;
+        height: 3rem;
+        width: 3rem; }
+        .header__icon-container a svg:hover {
+          fill: red;
+          animation: pulse 1s infinite; }
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+  .header__switch {
+    fill: white;
+    height: 18rem;
+    width: 18rem;
+    margin-top: 2rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center; }
+    @media only screen and (max-width: 56.25em) {
+      .header__switch {
+        display: none; } }
+    .header__switch:hover {
+      fill: red;
+      animation: pulse 1s infinite; }
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
 .nav__items {
   height: 100%;
   width: 100%;
@@ -58,21 +137,17 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60vh 50vh 100vh 80vh 70vh 15vh; }
+  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 15vh; }
 
 .nav {
   background-color: black;
   height: 7vh;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
 
 .header {
-  background-color: #141414;
-  color: white;
-  font-size: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-image: url(../../img/hero.jpg); }
 
 .intro {
   background-color: #fafafa;

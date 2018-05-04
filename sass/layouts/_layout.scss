@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 60vh 50vh 100vh 80vh 70vh 15vh;
+  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 15vh;
 }
 
 
@@ -9,16 +9,11 @@
   height: 7vh;
   width: 100%;
   position: fixed;
+  z-index: 100;
 }
 
 .header {
-  background-color: rgb(20, 20, 20);
-  color: white;
-  font-size: 10rem;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../../img/hero.jpg);
 }
 
 .intro {

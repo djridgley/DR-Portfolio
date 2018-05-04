@@ -1,0 +1,124 @@
+.header {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+//-----------------------------------------------------------------------------------------------------
+  &__headings {
+    margin-bottom: 10rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    & h1, h2, hr {
+      color: white;
+    }
+
+    & h1 {
+      font-size: 6rem;      
+    }
+
+    & h2 {
+      margin-top: -2rem;
+      font-size: 3rem;
+    }
+
+    & hr {
+      width: 30%;
+
+      @include respond(tab-land) {
+        width: 50%;
+      }
+  
+    }
+  }
+//-----------------------------------------------------------------------------------------------------
+  &__icon-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10rem;
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    & a {
+      display: inline-block;
+      padding: 0 3rem;
+
+      & svg {
+        fill: white;
+        height: 3rem;
+        width: 3rem;
+
+        &:hover {
+          fill: red;
+          animation: pulse 1s infinite;
+          
+          @keyframes pulse {
+            from {
+              transform: scale3d(1, 1, 1);
+            }
+          
+            50% {
+              transform: scale3d(1.15, 1.15, 1.15);
+            }
+          
+            to {
+              transform: scale3d(1, 1, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+//-----------------------------------------------------------------------------------------------------
+  &__switch {
+    fill: white;
+    height: 18rem;
+    width: 18rem;
+    margin-top: 2rem;
+
+    
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &:hover {
+      fill: red;
+      animation: pulse 1s infinite;
+      
+      @keyframes pulse {
+        from {
+          transform: scale3d(1, 1, 1);
+        }
+      
+        50% {
+          transform: scale3d(1.15, 1.15, 1.15);
+        }
+      
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+      }
+    }
+  }
+}
