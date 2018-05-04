@@ -1,6 +1,9 @@
 .container {
+  height:  100vh;
+
   display: grid;
-  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 15vh;
+  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 20vh;
+  grid-template-columns: 100%;
 }
 
 
@@ -12,9 +15,11 @@
   z-index: 100;
 }
 
+
 .header {
   background-image: url(../../img/hero.jpg);
 }
+
 
 .intro {
   background-color: $color-primary;
@@ -25,6 +30,7 @@
   align-items: center;
 }
 
+
 .skills {
   background-color: $color-text-secondary;
   font-size: 10rem;
@@ -34,6 +40,7 @@
   align-items: center;
 }
 
+
 .experience {
   background-color: $color-text-primary;
   font-size: 10rem;
@@ -41,7 +48,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
 }
+
 
 .personal {
   background-color: lightcoral;
@@ -50,7 +62,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
 }
+
 
 .footer {
   background-color: rgb(146, 206, 57);
@@ -59,4 +76,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
 }

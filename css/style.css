@@ -25,7 +25,8 @@ body {
   font-family: 'Kalam', cursive;
   font-weight: 300;
   line-height: 1.6;
-  position: relative; }
+  position: relative;
+  padding-bottom: 2rem; }
 
 .header {
   height: 100%;
@@ -115,11 +116,18 @@ body {
   @media only screen and (max-width: 37.5em) {
     .nav__items {
       justify-content: center; } }
+  @media only screen and (max-width: 25em) {
+    .nav__items {
+      justify-content: space-around; } }
   .nav__items li {
     color: white;
     list-style: none;
     font-size: 2rem;
     padding: 0 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__items li {
+        font-size: 1.5rem;
+        padding: 0 1rem; } }
     .nav__items li a {
       text-decoration: none;
       color: inherit; }
@@ -136,8 +144,10 @@ body {
     transform: scale3d(1, 1, 1); } }
 
 .container {
+  height: 100vh;
   display: grid;
-  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 15vh; }
+  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 20vh;
+  grid-template-columns: 100%; }
 
 .nav {
   background-color: black;
@@ -169,6 +179,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .experience {
+      font-size: 5rem; } }
 
 .personal {
   background-color: lightcoral;
@@ -176,6 +189,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .personal {
+      font-size: 5rem; } }
 
 .footer {
   background-color: #92ce39;
@@ -183,3 +199,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      font-size: 5rem; } }
