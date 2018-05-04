@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "serve": "live-server",
+    "serve": "live-server --browser=firefox",
 
     "devserver": "npm-run-all --parallel serve watch:sass",
     

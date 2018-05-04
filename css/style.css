@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 68.75%; } }
+  @media only screen and (min-width: 150em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: 'Kalam', cursive;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 10vh 60vh 50vh 100vh 80vh 70vh 15vh; }
+
+.nav {
+  background-color: black;
+  font-size: 6rem;
+  color: white;
+  text-align: center; }
+
+.header {
+  background-color: #141414;
+  color: white;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.intro {
+  background-color: #fafafa;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.skills {
+  background-color: #17a2b8;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.experience {
+  background-color: #5a5a5a;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.personal {
+  background-color: lightcoral;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer {
+  background-color: #92ce39;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

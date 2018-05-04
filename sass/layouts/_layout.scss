@@ -1,0 +1,68 @@
+.container {
+
+  display: grid;
+  grid-template-rows: 10vh 60vh 50vh 100vh 80vh 70vh 15vh;
+}
+
+
+.nav {
+  background-color: black;
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  font-size: 10rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  background-color: $color-primary;
+  font-size: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  background-color: $color-text-secondary;
+  font-size: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience {
+  background-color: $color-text-primary;
+  font-size: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal {
+  background-color: lightcoral;
+  font-size: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(146, 206, 57);
+  font-size: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
