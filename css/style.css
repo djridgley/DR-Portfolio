@@ -213,11 +213,11 @@ body {
   grid-template-columns: 10vw 20vw; }
   @media only screen and (max-width: 37.5em) {
     .skills {
-      grid-template-rows: 1fr 4fr;
+      grid-template-rows: 1fr 6fr;
       grid-template-columns: 1fr; } }
   @media only screen and (max-width: 25em) {
     .skills {
-      grid-template-rows: 1fr 5fr;
+      grid-template-rows: 1fr 7fr;
       grid-template-columns: 1fr; } }
   .skills__heading {
     padding-top: 15rem;
@@ -238,7 +238,7 @@ body {
         align-self: center;
         grid-row: 1;
         grid-column: unset;
-        padding: 3rem 0; } }
+        padding: 0; } }
     @media only screen and (max-width: 25em) {
       .skills__heading {
         padding: 0; } }
@@ -266,11 +266,16 @@ body {
       .skills__container {
         align-self: start; } }
     .skills__container h2 {
-      padding-top: 2rem;
+      padding-top: 3rem;
+      margin-top: 3rem;
       font-size: 4rem; }
+      @media only screen and (max-width: 37.5em) {
+        .skills__container h2 {
+          margin-top: 2rem; } }
       @media only screen and (max-width: 25em) {
         .skills__container h2 {
-          font-size: 3rem; } }
+          font-size: 3rem;
+          margin-top: 0; } }
     .skills__container h3 {
       padding-top: 2rem;
       margin-bottom: -1rem;
