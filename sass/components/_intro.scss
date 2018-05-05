@@ -11,9 +11,11 @@
   }
 //--------------------------------------------------------------------------------
   &__heading {
+    padding-top: 10rem;
+
     grid-column: 2/3;
     justify-self: center;
-    align-self: center;
+    align-self: start;
 
     @include respond(tab-land) {
       padding-right: 4rem;
@@ -28,6 +30,7 @@
     @include respond(phone) {
       grid-row: 1;
       grid-column: unset;
+      align-self: center;
       padding: 3rem 0;
     }
 
