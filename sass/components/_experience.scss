@@ -40,15 +40,15 @@
   }
 //--------------------------------------------------------------------------------
   &__projects {
-    padding: 3rem 3rem;
+    padding: 3rem 3rem 3rem 0;
     grid-row: 1;
     grid-column: 3/4;
     align-self: center;
     justify-self: start;
 
     display: grid;
-    grid-template-rows: repeat(2, minmax(10vw,28rem));
-    grid-template-columns: repeat(4, minmax(10vw,28rem));
+    grid-template-rows: repeat(2, minmax(10vw, 30rem));
+    grid-template-columns: repeat(4, minmax(10vw, 30rem));
 
     @include respond(tab-land) {
       grid-template-columns: repeat(2, 1fr);
