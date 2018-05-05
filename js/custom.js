@@ -50,7 +50,6 @@ $(".50").animate({
 
 // jQuery for making a div a link
 // selects element with class project, and executes function.
-
 $(".project").click(function() {
   window.open($(this).find("a:first").attr("href"));
   return false;

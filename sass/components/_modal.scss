@@ -1,0 +1,38 @@
+.modal {
+  color: $color-text-primary;
+
+  &-title {
+    font-size: 4rem;
+    padding-left: 10%;
+  }
+
+  &-body {
+    padding: 0 5% 0 5%;
+
+    & ul {
+      list-style: square;
+      font-family: hind, sans-serif;
+      font-size: 1.2rem;
+      padding: 1rem 0;
+      padding-left: 3%;
+    }
+
+    & p {
+      font-family: hind, sans-serif;
+      font-size: 1.2rem;
+    }
+
+    & ul.career {
+      list-style: none;
+    }
+  }
+}
+
+
+.career-text, .work-live-text, .philosophy-text {
+  padding: 1rem 0;
+}
+
+.career-list {
+  color: $color-text-tertiary;
+}

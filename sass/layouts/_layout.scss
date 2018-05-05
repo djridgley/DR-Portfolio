@@ -2,11 +2,11 @@
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 70vh 50vh max-content max-content 70vh 20vh;
+  grid-template-rows: 70vh 50vh max-content max-content max-content 20vh;
   grid-template-columns: 100%;  
 
   @include respond(phone) {
-    grid-template-rows: 70vh max-content max-content max-content 70vh 20vh;
+    grid-template-rows: 70vh max-content max-content max-content max-content 20vh;
   }
 }
 
@@ -42,16 +42,7 @@
 
 
 .personal {
-  background-color: lightcoral;
-  font-size: 10rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include respond(tab-port) {
-    font-size: 5rem;
-  }
+  background-color: $color-secondary;
 }
 
 
