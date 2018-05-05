@@ -55,3 +55,9 @@ $(".project").click(function() {
   window.open($(this).find("a:first").attr("href"));
   return false;
 });
+
+
+// jQuery for ensuring video BG autoplays properly
+$( window ).load(function() {
+  $( '.header__bg' ).get(0).play();
+});
