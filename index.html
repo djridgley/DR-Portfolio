@@ -42,6 +42,12 @@
 
 
     <div id="header" class="header">
+
+        <video id="myVideo" autoplay loop class="header__bg">
+            <source src="img/Pink_Mood_NYC.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="img/Pink_Mood_NYC.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          </video>
+      
       <div class="header__headings">
         <h1>David Ridgley</h1>
         <h2>Web Developer</h2>
@@ -63,12 +69,8 @@
           <svg>
             <use href="img/sprite.svg#icon-envelope" />
           </svg>
-        </a>      
+        </a>
       </div>
-
-      <svg class="header__switch">
-          <use href="img/sprite.svg#icon-switch" />
-        </svg>
     </div>
 
     <div id="intro" class="intro">
@@ -94,6 +96,8 @@
 
 
   </div>
+
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
