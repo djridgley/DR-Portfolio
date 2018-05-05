@@ -254,7 +254,7 @@ body {
   .skills__container {
     font-family: hind, sans-serif;
     color: #5a5a5a;
-    padding: 0 3rem 5rem 3rem;
+    padding: 0 3rem 5rem 0rem;
     grid-row: 1;
     grid-column: 3/4; }
     @media only screen and (max-width: 37.5em) {
