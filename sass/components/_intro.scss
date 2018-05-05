@@ -11,7 +11,8 @@
   }
 //--------------------------------------------------------------------------------
   &__heading {
-    padding-top: 10rem;
+    color: $color-text-primary;
+    padding-top: 10rem;    
 
     grid-column: 2/3;
     justify-self: center;
@@ -56,6 +57,7 @@
 //--------------------------------------------------------------------------------
   &__story {
     color: $color-text-primary;
+    padding-right: 3rem;
 
     grid-row: 1;
     grid-column: 3/4;
