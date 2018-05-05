@@ -1,12 +1,12 @@
-.container {
+.main-container {
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 20vh;
+  grid-template-rows: 70vh 50vh max-content 80vh 70vh 20vh;
   grid-template-columns: 100%;  
 
   @include respond(phone) {
-    grid-template-rows: 70vh max-content 100vh 80vh 70vh 20vh;
+    grid-template-rows: 70vh max-content max-content 80vh 70vh 20vh;
   }
 }
 
@@ -30,12 +30,7 @@
 
 
 .skills {
-  background-color: $color-text-secondary;
-  font-size: 10rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: $color-secondary;
 }
 
 

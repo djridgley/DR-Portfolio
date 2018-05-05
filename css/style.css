@@ -122,9 +122,6 @@ body {
     .intro {
       grid-template-rows: 1fr 3fr;
       grid-template-columns: 1fr; } }
-  @media only screen and (max-width: 25em) {
-    .intro {
-      grid-template-columns: 1fr; } }
   .intro__heading {
     grid-column: 2/3;
     justify-self: center;
@@ -155,13 +152,15 @@ body {
       text-align: center;
       line-height: 0; }
   .intro__story {
+    color: #5a5a5a;
+    grid-row: 1;
     grid-column: 3/4;
     align-self: center; }
     @media only screen and (max-width: 37.5em) {
       .intro__story {
         grid-row: 2;
         grid-column: unset;
-        padding: 0 3rem 3rem 4rem; } }
+        padding: 0 3rem 3rem 3rem; } }
     @media only screen and (max-width: 25em) {
       .intro__story {
         align-self: start; } }
@@ -208,14 +207,94 @@ body {
   to {
     transform: scale3d(1, 1, 1); } }
 
-.container {
+.skills {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 10vw 20vw; }
+  @media only screen and (max-width: 37.5em) {
+    .skills {
+      grid-template-rows: 1fr 4fr;
+      grid-template-columns: 1fr; } }
+  @media only screen and (max-width: 25em) {
+    .skills {
+      grid-template-rows: 1fr 5fr;
+      grid-template-columns: 1fr; } }
+  .skills__heading {
+    padding-top: 15rem;
+    grid-row: 1;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: start; }
+    @media only screen and (max-width: 75em) {
+      .skills__heading {
+        padding-right: 4rem;
+        padding-bottom: 7rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .skills__heading {
+        padding-right: 6rem;
+        padding-bottom: 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .skills__heading {
+        align-self: center;
+        grid-row: 1;
+        grid-column: unset;
+        padding: 3rem 0; } }
+    @media only screen and (max-width: 25em) {
+      .skills__heading {
+        padding: 0; } }
+    .skills__heading h2 {
+      font-size: 7rem; }
+      @media only screen and (max-width: 25em) {
+        .skills__heading h2 {
+          font-size: 5rem; } }
+    .skills__heading h3 {
+      font-size: 2rem;
+      text-align: center;
+      line-height: 0; }
+  .skills__container {
+    font-family: hind, sans-serif;
+    color: #5a5a5a;
+    padding: 0 3rem 5rem 3rem;
+    grid-row: 1;
+    grid-column: 3/4; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__container {
+        grid-row: 2;
+        grid-column: unset;
+        padding: 0 3rem 3rem 3rem; } }
+    @media only screen and (max-width: 25em) {
+      .skills__container {
+        align-self: start; } }
+    .skills__container h2 {
+      padding-top: 2rem;
+      font-size: 4rem; }
+      @media only screen and (max-width: 25em) {
+        .skills__container h2 {
+          font-size: 3rem; } }
+    .skills__container h3 {
+      padding-top: 2rem;
+      margin-bottom: -1rem;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between; }
+      @media only screen and (max-width: 25em) {
+        .skills__container h3 {
+          font-size: 1.2rem; } }
+
+.progress {
+  height: .8rem; }
+  .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important; }
+
+.main-container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 70vh 50vh 100vh 80vh 70vh 20vh;
+  grid-template-rows: 70vh 50vh max-content 80vh 70vh 20vh;
   grid-template-columns: 100%; }
   @media only screen and (max-width: 37.5em) {
-    .container {
-      grid-template-rows: 70vh max-content 100vh 80vh 70vh 20vh; } }
+    .main-container {
+      grid-template-rows: 70vh max-content max-content 80vh 70vh 20vh; } }
 
 .nav {
   background-color: rgba(0, 0, 0, 0.6);
@@ -227,14 +306,10 @@ body {
   background-color: rgba(0, 0, 0, 0.6); }
 
 .intro {
-  background-color: #fafafa; }
+  background-color: #f8f4f4; }
 
 .skills {
-  background-color: #17a2b8;
-  font-size: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-color: #fafafa; }
 
 .experience {
   background-color: #5a5a5a;
