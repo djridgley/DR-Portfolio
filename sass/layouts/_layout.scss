@@ -35,16 +35,7 @@
 
 
 .experience {
-  background-color: $color-text-primary;
-  font-size: 10rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include respond(tab-port) {
-    font-size: 5rem;
-  }
+  background-color: $color-primary;
 }
 
 
