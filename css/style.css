@@ -143,6 +143,47 @@ body {
       height: 4rem;
       width: 4rem; }
 
+.footer {
+  color: #17a2b8;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .footer p {
+    font-size: 1.6rem; }
+  .footer__copy {
+    grid-row: 1;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: start; }
+  .footer__language-info {
+    padding-left: 3rem;
+    grid-row: 1;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: start; }
+  .footer__browser-info {
+    grid-row: 1;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: start; }
+  .footer__icon-container-languages {
+    grid-row: 1;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center; }
+  .footer__icon-container-browsers {
+    grid-row: 1;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: center; }
+  .footer svg {
+    fill: currentColor;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 2rem 0 2rem; }
+    .footer svg .js {
+      fill: red; }
+
 .header {
   height: 100%;
   width: 100%;
@@ -560,7 +601,7 @@ body {
 .main-container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 70vh 50vh max-content max-content max-content 20vh;
+  grid-template-rows: 70vh 50vh max-content max-content max-content 15vh;
   grid-template-columns: 100%; }
   @media only screen and (max-width: 37.5em) {
     .main-container {
@@ -589,14 +630,7 @@ body {
   background-color: #fafafa; }
 
 .footer {
-  background-color: #92ce39;
-  font-size: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  @media only screen and (max-width: 56.25em) {
-    .footer {
-      font-size: 5rem; } }
+  background-color: #5a5a5a; }
 
 /*--------------------------------------------------
     [Back To Top Theme Button]

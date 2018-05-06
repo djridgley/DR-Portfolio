@@ -1,0 +1,62 @@
+.footer {
+  color: $color-text-secondary;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  & p {
+    font-size: 1.6rem;
+  }
+
+  &__copy {    
+
+    grid-row: 1;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: start;    
+  }
+
+  &__language-info {
+    padding-left: 3rem;
+
+    grid-row: 1;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: start;
+  }
+
+  &__browser-info {
+
+    grid-row: 1;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: start;
+  }
+
+  &__icon-container-languages {    
+
+    grid-row: 1;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__icon-container-browsers {    
+
+    grid-row: 1;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self: center;
+  }
+  & svg {
+    fill: currentColor;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 2rem 0 2rem;
+
+    & .js {
+      fill: red;
+    }
+  }
+}
