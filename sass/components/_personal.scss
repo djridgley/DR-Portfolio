@@ -75,6 +75,7 @@
       padding: 0;
       padding-bottom: 3rem;
 
+      grid-gap: 2rem;
       grid-row: 2;
       grid-column: unset;
 
@@ -95,6 +96,10 @@
 
       &:hover {
         opacity: .5;
+      }
+
+      @include respond(phone) {
+        opacity: .6;
       }
     }
 

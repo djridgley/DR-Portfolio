@@ -12,10 +12,10 @@
 
 
 .nav {
-  background-color: rgba($color-black, .2);
+  background-color: transparent;
   height: 7vh;
   width: 100%;
-  position: fixed;
+  position: absolute;
 
   z-index: 20;
 }

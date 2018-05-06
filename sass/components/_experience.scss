@@ -70,20 +70,24 @@
       grid-template-columns: 1fr;
       grid-gap: 0;
       padding: 0;
+      padding-bottom: 3rem;
     }
 
     & .project {
       height: 100%;
       width: 100%;
       font-family: hind, sans-serif;
-      
-      
+
       align-self: center;
       
-
       display: grid;
       grid-template-rows: 1fr 1fr 2fr;
-     
+
+      @include respond(phone) {
+        //animation: none !important;
+        transform: none !important;
+        transition: all 1s;
+      }
 
       & h2 {
         font-size: 2.5rem;
