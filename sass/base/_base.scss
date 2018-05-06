@@ -9,6 +9,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  
+  @include respond(huge-desktop) { // width < 2400px
+    font-size: 75%; // 1 rem = 12px, 12/16 = 75%
+  }
+
+  @include respond(big-desktop) { // width < 1800px
+    font-size: 68.75%; // 1 rem = 11px, 11/16 = 68.75%
+  }
 
   @include respond(tab-land) { // width < 1200px
     font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
@@ -16,14 +24,6 @@ html {
 
   @include respond(tab-port) { // width < 900px
     font-size: 50%; // 1 rem = 8px, 8/16 = 50%
-  }
-
-  @include respond(big-desktop) { // width > 1800px
-    font-size: 68.75%; // 1 rem = 11px, 11/16 = 68.75%
-  }
-
-  @include respond(huge-desktop) { // width > 2400px
-    font-size: 75%; // 1 rem = 12px, 12/16 = 75%
   }
 }
 

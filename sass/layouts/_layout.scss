@@ -2,11 +2,11 @@
   height: 100vh;
 
   display: grid;
-  grid-template-rows: 70vh 50vh max-content max-content max-content 15vh;
-  grid-template-columns: 100%;  
+  grid-template-rows: 70vh 50vh max-content max-content max-content max-content;
+  grid-template-columns: 100%;
 
   @include respond(phone) {
-    grid-template-rows: 70vh max-content max-content max-content max-content 20vh;
+    grid-template-rows: 70vh max-content max-content max-content max-content max-content;
   }
 }
 
