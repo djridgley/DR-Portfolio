@@ -1,5 +1,17 @@
 new WOW().init();
 
+// Add smooth scrolling to links in the nav
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+
 
 // jQuery for progress bar animations
 
@@ -56,7 +68,4 @@ $(".project").click(function () {
 });
 
 
-// jQuery for ensuring video BG autoplays properly
-$(window).load(function () {
-  $('.header__bg').get(0).play();
-});
+

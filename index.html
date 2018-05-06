@@ -13,7 +13,6 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,9 +21,6 @@
   <!-- NAV -->
   <div class="nav">
     <ul class="nav__items">
-      <li class="nav-item">
-        <a href="#header">Home</a>
-      </li>
       <li class="nav-item">
         <a href="#intro">About</a>
       </li>
@@ -53,11 +49,9 @@
 
 
     <!-- HEADER -->
-    <div id="header" class="header">
+    <div class="header">
 
-      <video class="header__bg" autoplay muted loop>
-        <source src="img/Pink_Mood_NYC.webm" type="video/webm" />
-      </video>
+      <img src="img/hero.jpg" alt="header background" class="header__bg">
 
       <div class="header__headings">
         <h1>David Ridgley</h1>
@@ -223,7 +217,7 @@
       </div>
 
       <div class="experience__projects">
-        <div id="project" class="project project-1 wow animated fadeInLeft" data-wow-offset="100">
+        <div id="project" class="project project-1">
           <a href="https://tourzis-dr.herokuapp.com/" target="_blank" class="project-1__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-compass2" />
@@ -233,7 +227,7 @@
           <p>A demo landing page for a finctional tour company created entirely in HTML and CSS</p>
         </div>
 
-        <div id="project" class="project project-2 wow animated fadeInDown" data-wow-offset="100">
+        <div id="project" class="project project-2">
           <a href="https://github.com/arximiro" target="_blank" class="project-2__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-github" />
@@ -243,7 +237,7 @@
           <p>I've worked on a few other projects, you can check out my code on Git</p>
         </div>
 
-        <div id="project" class="project project-3 wow animated fadeInDown" data-wow-offset="100">
+        <div id="project" class="project project-3">
           <a href="https://Trillo-dr.herokuapp.com/" target="_blank" class="project-3__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-airplane" />
@@ -253,7 +247,7 @@
           <p>A demo page for a fictional trip booking site built entirely in HTML and CSS utilizing flexbox</p>
         </div>
 
-        <div id="project" class="project project-4 wow animated fadeInRight" data-wow-offset="100">
+        <div id="project" class="project project-4">
           <a href="https://indecision-app-dr.herokuapp.com/" target="_blank" class="project-4__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-magic-wand" />
@@ -263,7 +257,7 @@
           <p>A simple app created with React to assist with indecision.</p>
         </div>
 
-        <div id="project" class="project project-5 wow animated fadeInLeft" data-wow-offset="100">
+        <div id="project" class="project project-5">
           <a href="https://expensify-dr.herokuapp.com/" target="_blank" class="project-5__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-coin-dollar" />
@@ -273,7 +267,7 @@
           <p>An expense tracking app that uses React/Redux with a Node/Firebase backend</p>
         </div>
 
-        <div id="project" class="project project-6 wow animated fadeInUp" data-wow-offset="100">
+        <div id="project" class="project project-6">
           <a href="https://nexter-dr.herokuapp.com/" target="_blank" class="project-6__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-earth" />
@@ -283,7 +277,7 @@
           <p>A demo landing page created for a fictional real estate company using HTML and CSS utilizing CSS Grids</p>
         </div>
 
-        <div id="project" class="project project-7 wow animated fadeInUp" data-wow-offset="100">
+        <div id="project" class="project project-7">
           <a href="https://hamburger-builder-dr.herokuapp.com/" target="_blank" class="project-7__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-paragraph-justify" />
@@ -293,7 +287,7 @@
           <p>An app built with React that lets the user build and order a delicious burger! Orders are stored in Firebase</p>
         </div>
 
-        <div id="project" class="project project-8 wow animated fadeInRight" data-wow-offset="100">
+        <div id="project" class="project project-8">
           <a href="https://node-chat-app-dr.herokuapp.com/" target="_blank" class="project-8__icon experience__icon">
             <svg>
               <use href="img/sprite.svg#icon-bubbles3" />
@@ -525,17 +519,17 @@
 
 
 
+  
+  <!-- BACK-TO-TOP BUTTON -->
   <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
 
-
-
   <!-- SCRIPTS CDN  -->
-  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <!-- SCRIPTS CDN END  -->
 
   <!-- SCRIPTS LOCAL  -->
