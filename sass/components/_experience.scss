@@ -82,13 +82,7 @@
       
       display: grid;
       grid-template-rows: 1fr 1fr 2fr;
-
-      @include respond(phone) {
-        //animation: none !important;
-        transform: none !important;
-        transition: all 1s;
-      }
-
+      
       & h2 {
         font-size: 2.5rem;
         font-weight: bold;

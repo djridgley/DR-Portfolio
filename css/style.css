@@ -92,10 +92,6 @@ body {
       align-self: center;
       display: grid;
       grid-template-rows: 1fr 1fr 2fr; }
-      @media only screen and (max-width: 37.5em) {
-        .experience__projects .project {
-          transform: none !important;
-          transition: all 1s; } }
       .experience__projects .project h2 {
         font-size: 2.5rem;
         font-weight: bold;
