@@ -10,7 +10,6 @@
   }
 }
 
-
 .nav {
   background-color: transparent;
   height: 7vh;
@@ -18,39 +17,4 @@
   position: absolute;
 
   z-index: 20;
-}
-
-
- .header {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero.jpg);
-  background-size: cover;
-
-  @include respond(tab-port) {
-    background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero-alt.jpg);
-  }
- }
-
-
-.intro {
-  background-color: $color-primary;
-}
-
-
-.skills {
-  background-color: $color-secondary;
-}
-
-
-.experience {
-  background-color: $color-primary;
-}
-
-
-.personal {
-  background-color: $color-secondary;
-}
-
-
-.footer {
-  background-color: $color-text-primary;
 }

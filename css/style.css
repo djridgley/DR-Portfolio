@@ -25,6 +25,7 @@ body {
   position: relative; }
 
 .experience {
+  background-color: #f8f4f4;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 10vw 20vw; }
@@ -140,6 +141,7 @@ body {
       width: 4rem; }
 
 .footer {
+  background-color: #5a5a5a;
   color: #17a2b8;
   display: grid;
   grid-template-rows: 10vw;
@@ -235,10 +237,15 @@ body {
       fill: #8a8686; }
 
 .header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/hero.jpg);
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/hero-alt.jpg); } }
   .header__headings {
     display: flex;
     justify-content: center;
@@ -284,6 +291,7 @@ body {
     transform: scale3d(1, 1, 1); } }
 
 .intro {
+  background-color: #f8f4f4;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 10vw 20vw; }
@@ -406,6 +414,7 @@ body {
     transform: scale3d(1, 1, 1); } }
 
 .personal {
+  background-color: #fafafa;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 10vw 20vw; }
@@ -555,6 +564,7 @@ body {
           grid-column: 1; } }
 
 .skills {
+  background-color: #fafafa;
   color: #5a5a5a;
   display: grid;
   grid-template-rows: 1fr;
@@ -654,28 +664,6 @@ body {
   width: 100%;
   position: absolute;
   z-index: 20; }
-
-.header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/hero.jpg);
-  background-size: cover; }
-  @media only screen and (max-width: 56.25em) {
-    .header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/hero-alt.jpg); } }
-
-.intro {
-  background-color: #f8f4f4; }
-
-.skills {
-  background-color: #fafafa; }
-
-.experience {
-  background-color: #f8f4f4; }
-
-.personal {
-  background-color: #fafafa; }
-
-.footer {
-  background-color: #5a5a5a; }
 
 /*--------------------------------------------------
     [Back To Top Theme Button]

@@ -1,9 +1,15 @@
 .header {
-  
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero.jpg);
+  background-size: cover;
+ 
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero-alt.jpg);
+  }
 //-----------------------------------------------------------------------------------------------------
   &__headings {
     display: flex;
