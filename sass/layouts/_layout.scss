@@ -22,7 +22,7 @@
 
 
  .header {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero2.jpg);
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero.jpg);
   background-size: cover;
 
   @include respond(tab-port) {
