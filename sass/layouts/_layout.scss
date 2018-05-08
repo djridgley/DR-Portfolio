@@ -21,9 +21,14 @@
 }
 
 
-.header {
-  background-color: rgba($color-black, .6);
-}
+ .header {
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero2.jpg);
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../../img/hero-alt.jpg);
+  }
+ }
 
 
 .intro {

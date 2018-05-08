@@ -11,8 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-
-
 // jQuery for progress bar animations
 
 $(".100").animate({
