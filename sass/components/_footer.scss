@@ -1,9 +1,9 @@
 .footer {
-  background-color: $color-text-primary;  
+  background-color: $color-black;
   color: $color-text-secondary;
 
   display: grid;
-  grid-template-rows: 10vw;
+  grid-template-rows: 9vw;
   grid-template-columns: 1fr 1fr 1fr;
 
   @include respond(tab-port) {
@@ -110,8 +110,8 @@
 
   & svg {
     fill: currentColor;
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     margin: 0 2rem 0 2rem;
     transition: all .3s;
 
@@ -136,7 +136,7 @@
 
 
     &:hover {
-      fill: $color-text-tertiary;
+      fill: darken($color-text-secondary, 20%);
     }
   }
 }

@@ -141,10 +141,10 @@ body {
       width: 4rem; }
 
 .footer {
-  background-color: #5a5a5a;
+  background-color: #000;
   color: #17a2b8;
   display: grid;
-  grid-template-rows: 10vw;
+  grid-template-rows: 9vw;
   grid-template-columns: 1fr 1fr 1fr; }
   @media only screen and (max-width: 56.25em) {
     .footer {
@@ -217,8 +217,8 @@ body {
     text-decoration: none; }
   .footer svg {
     fill: currentColor;
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     margin: 0 2rem 0 2rem;
     transition: all .3s; }
     @media only screen and (max-width: 75em) {
@@ -234,7 +234,7 @@ body {
       .footer svg {
         margin: 1rem 1rem 0 1rem; } }
     .footer svg:hover {
-      fill: #8a8686; }
+      fill: #0c525d; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/hero.jpg);
@@ -277,18 +277,10 @@ body {
       .header__icon-container a svg {
         fill: #8a8686;
         height: 3rem;
-        width: 3rem; }
+        width: 3rem;
+        transition: all .3s; }
         .header__icon-container a svg:hover {
-          fill: red;
-          animation: pulse 1s infinite; }
-
-@keyframes pulse {
-  from {
-    transform: scale3d(1, 1, 1); }
-  50% {
-    transform: scale3d(1.15, 1.15, 1.15); }
-  to {
-    transform: scale3d(1, 1, 1); } }
+          fill: #17a2b8; }
 
 .intro {
   background-color: #f8f4f4;
@@ -333,7 +325,7 @@ body {
       line-height: 0; }
   .intro__story {
     color: #5a5a5a;
-    padding-right: 3rem;
+    padding: 3rem 3rem 3rem 0;
     grid-row: 1;
     grid-column: 3/4;
     align-self: center; }
@@ -346,7 +338,7 @@ body {
       .intro__story {
         align-self: start; } }
     .intro__story p {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-family: hind, sans-serif; }
       @media only screen and (max-width: 25em) {
         .intro__story p {
@@ -393,7 +385,8 @@ body {
     color: #8a8686;
     list-style: none;
     font-size: 2rem;
-    padding: 0 2rem; }
+    padding: 0 2rem;
+    transition: all .3s; }
     @media only screen and (max-width: 25em) {
       .nav__items li {
         font-size: 1.5rem;
@@ -402,16 +395,7 @@ body {
       text-decoration: none;
       color: inherit; }
     .nav__items li:hover {
-      color: red;
-      animation: pulse 1s infinite; }
-
-@keyframes pulse {
-  from {
-    transform: scale3d(1, 1, 1); }
-  50% {
-    transform: scale3d(1.15, 1.15, 1.15); }
-  to {
-    transform: scale3d(1, 1, 1); } }
+      color: #17a2b8; }
 
 .personal {
   background-color: #fafafa;
@@ -652,11 +636,8 @@ body {
 .main-container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 70vh 50vh max-content max-content max-content max-content;
+  grid-template-rows: 70vh max-content max-content max-content max-content max-content;
   grid-template-columns: 100%; }
-  @media only screen and (max-width: 37.5em) {
-    .main-container {
-      grid-template-rows: 70vh max-content max-content max-content max-content max-content; } }
 
 .nav {
   background-color: transparent;

@@ -58,7 +58,7 @@
 //--------------------------------------------------------------------------------
   &__story {
     color: $color-text-primary;
-    padding-right: 3rem;
+    padding: 3rem 3rem 3rem 0;
 
     grid-row: 1;
     grid-column: 3/4;
@@ -75,7 +75,7 @@
     }
 
     & p {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-family: hind, sans-serif;
 
       @include respond(small-phone) {
