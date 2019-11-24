@@ -3,11 +3,11 @@ new WOW().init();
 // Add smooth scrolling to links in the nav
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+    e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
 
@@ -53,8 +53,40 @@ $(".55").animate({
   width: "55%"
 }, 2500);
 
-$(".50").animate({
-  width: "50%"
+$(".45").animate({
+  width: "45%"
+}, 2500);
+
+$(".40").animate({
+  width: "40%"
+}, 2500);
+
+$(".35").animate({
+  width: "35%"
+}, 2500);
+
+$(".30").animate({
+  width: "30%"
+}, 2500);
+
+$(".25").animate({
+  width: "25%"
+}, 2500);
+
+$(".20").animate({
+  width: "20%"
+}, 2500);
+
+$(".15").animate({
+  width: "15%"
+}, 2500);
+
+$(".10").animate({
+  width: "10%"
+}, 2500);
+
+$(".5").animate({
+  width: "5%"
 }, 2500);
 
 

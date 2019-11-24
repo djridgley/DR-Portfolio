@@ -343,6 +343,13 @@ body {
       @media only screen and (max-width: 25em) {
         .intro__story p {
           font-size: 1.6rem; } }
+    .intro__story li {
+      font-size: 1.8rem;
+      font-family: hind, sans-serif;
+      margin-left: 2rem; }
+      @media only screen and (max-width: 25em) {
+        .intro__story li {
+          font-size: 1.6rem; } }
 
 .modal {
   color: #5a5a5a; }
